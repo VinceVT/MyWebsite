@@ -111,7 +111,7 @@ b {
     min-height: 450px;
     background: white;
     z-index: 1;
-    background-image: url("/MyWebsite/Images/bg.png");
+    background-image: url("/MyWebsite/Website/Images/bg.png");
     opacity: .95;
     border: solid;
     display: flex;
