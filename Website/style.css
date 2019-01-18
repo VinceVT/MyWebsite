@@ -1,0 +1,174 @@
+body, html {
+  height: 100%;
+  font-family: Arial;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/MyWebsite/Images/BeautifulSky.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 640px;
+    min-width: 640px;
+
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: baseline;
+    padding: 4px 4px;
+    order: -1;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.btn {
+      color: white;
+      background: #DB1313; /* Remove background color */
+      border: 2px solid #0099CC; /* Border thickness, line style, and color */
+      border-radius: 2px; /* Adds curve to border corners */
+      text-decoration: none;
+      font-color: white;
+      text-transform: uppercase; /* Make letters uppercase */
+      border: none;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin: 2px 1px;
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+}
+.btns {
+      background-color: #800000;
+      color: white;
+      border: 2px solid #282828;
+}
+ .btns:hover {
+      background-color: white;
+      color: black;
+ }
+
+b {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  border-radius:5px;
+  background: #fff;
+  border: 2px solid #008CBA;
+  color: #008CBA;
+  letter-spacing:1px;
+  text-shadow:0;
+  width: 100%;
+  font:{
+    size:12px;
+    weight:bold;
+  }
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  &:active {
+    letter-spacing: 2px ;
+  }
+  &:after {
+    content:"";
+  }
+}
+
+.mainContainer {
+    width: 60%;
+    min-height: 450px;
+    background: white;
+    z-index: 1;
+    background-image: url("/MyWebsite/Images/bg.png");
+    opacity: .95;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#smallCont {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    flex-direction: column;
+}
+
+.profilePic {
+   width: 150px;
+   height: 150px;
+   /* background-image: url("/MyWebsite/Images/linked.jpeg"); */
+   background: white;
+   border-radius: 85px;
+   box-shadow: 1px 1px 6px 3px #888888;
+}
+
+t {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#pa {
+    font-size: 16px;
+    width: 75%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+input.MyButton {
+    margin-top: 20px;
+    width: 300px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 10x;
+    background: #800000;
+    color: #fff;
+    border: 1px solid #3366cc;
+    border-radius: 10px;
+}
+
+input.MyButton:hover {
+    color: black;
+    background: red;
+    border: 1px solid #fff;
+}
+
+i:hover {
+    border: 1px solid #fff;
+}
