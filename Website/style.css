@@ -133,8 +133,7 @@ b {
 .profilePic {
    width: 150px;
    height: 150px;
-   /* background-image: url("/MyWebsite/Images/linked.jpeg"); */
-   background: white;
+   background-image: url("/MyWebsite/Images/linkin.jpeg");
    border-radius: 85px;
    box-shadow: 1px 1px 6px 3px #888888;
 }
