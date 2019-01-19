@@ -5,7 +5,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url("/MyWebsite/Website/Images/BeautifulSky.jpg");
+  background-image: url("/Images/BeautifulSky.jpg");
 
   /* Full height */
   height: 100%;
@@ -111,7 +111,7 @@ b {
     min-height: 450px;
     background: white;
     z-index: 1;
-    background-image: url("/MyWebsite/Website/Images/bg.png");
+    background-image: url("/Images/bg.png");
     opacity: .95;
     border: solid;
     display: flex;
@@ -133,7 +133,7 @@ b {
 .profilePic {
    width: 150px;
    height: 150px;
-   background-image: url("/MyWebsite/Website/Images/linkin.jpeg");
+   background-image: url("/Images/linkin.jpeg");
    border-radius: 85px;
    box-shadow: 1px 1px 6px 3px #888888;
 }
