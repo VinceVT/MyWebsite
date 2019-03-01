@@ -5,21 +5,22 @@
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="index.js"></script>
 </head>
 <body class="bg">
 <div class="wrapper">
     <div class="container">
         <div class="navContainer">
             <div class="navBar">
-                <button class="btn btns">Home</button>
-                <button class="btn btns">Resume</button>
-                <button class="btn btns">Skills</button>
-                <button class="btn btns">Portfolio</button>
-                <button class="btn btns">Blog</button>
-                <button class="btn btns">Contact</button>
+                <li id="Home" class="btn btns" onclick="tabs('Home', 'div1')">Home</li>
+                <li id="Resume" class="btn btns" onclick="tabs('Resume', 'div2')">Resume</li>
+                <li id="Skills" class="btn btns" onclick="tabs('Skills', 'div3')">Skills</li>
+                <li id="Portfolio" class="btn btns" onclick="tabs('Portfolio', 'div4')">Portfolio</li>
+                <li id="Blog" class="btn btns" onclick="tabs('Blog', 'div5')">Blog</li>
+                <li id="Contact" class="btn btns" onclick="tabs('Contact', 'div6')">Contact</li>
             </div>
         </div>
-        <div class="mainContainer">
+        <div id="div1" class="mainContainer tab">
             <div id="smallCont">
                 <div class="profilePic">
                 </div>
@@ -38,6 +39,21 @@
                 <i class="fab fa-linkedin fa-2x" onclick="window.open('https://www.linkedin.com/in/vincevtruong/')"></i>
                 <i class="fab fa-github-square fa-2x" onclick="window.open('https://github.com/VinceVT')"></i>
             </div>
+        </div>
+        <div id="div2" class="mainContainer tab" style="display:none;">
+            <h1>Insert Resume Here.</h1>
+        </div>
+        <div id="div3" class="mainContainer tab" style="display:none;">
+            <h1>Insert Skills Here.</h1>
+        </div>
+        <div id="div4" class="mainContainer tab" style="display:none;">
+            <h1>Insert Portfolio Here.</h1>
+        </div>
+        <div id="div5" class="mainContainer tab" style="display:none;">
+            <h1>Insert Blog Here.</h1>
+        </div>
+        <div id="div6" class="mainContainer tab" style="display:none;">
+            <h1>Insert Contacts Here.</h1>
         </div>
     </div>
 </div>

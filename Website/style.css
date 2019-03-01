@@ -36,6 +36,7 @@ body, html {
     align-items: center;
     align-self: baseline;
     padding: 4px 4px;
+    margin-right: 1%;
     order: -1;
 }
 
@@ -50,27 +51,29 @@ body, html {
 
 .btn {
       color: white;
-      background: #DB1313; /* Remove background color */
+      background: #800000; /* Remove background color */
       border: 2px solid #0099CC; /* Border thickness, line style, and color */
       border-radius: 2px; /* Adds curve to border corners */
       text-decoration: none;
       font-color: white;
       text-transform: uppercase; /* Make letters uppercase */
-      border: none;
-      padding: 8px 16px;
+      border: 2px solid #282828;
+      padding: 6px 6px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 12px;
-      margin: 2px 1px;
+      margin: 1px 1px;
       width: 100%;
       table-layout: fixed;
       border-collapse: collapse;
       -webkit-transition-duration: 0.4s; /* Safari */
       transition-duration: 0.4s;
       cursor: pointer;
+      animation: fadeEffect 1s;
 }
 .btns {
+      text-align: center;
       background-color: #800000;
       color: white;
       border: 2px solid #282828;
@@ -78,6 +81,14 @@ body, html {
  .btns:hover {
       background-color: white;
       color: black;
+      border: 2px solid #282828;
+ }
+
+ .btns.active {
+      background-color: white;
+      color: black;
+      border: 2px solid #282828;
+      display: flex;
  }
 
 b {
@@ -92,32 +103,25 @@ b {
   text-shadow:0;
   width: 100%;
   font:{
-    size:12px;
-    weight:bold;
-  }
+    size:12px
+    weight:bold
+  };
   cursor: pointer;
   transition: all 0.25s ease;
-
-  &:active {
-    letter-spacing: 2px ;
-  }
-  &:after {
-    content:"";
-  }
 }
 
 .mainContainer {
-    width: 60%;
-    min-height: 450px;
-    background: white;
-    z-index: 1;
-    background-image: url("/Images/bg.png");
-    opacity: .95;
-    border: solid;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
+  width: 60%;
+  min-height: 450px;
+  background: white;
+  z-index: 1;
+  background-image: url("/Images/bg.png");
+  opacity: .95;
+  border: solid;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 #smallCont {
@@ -170,4 +174,17 @@ input.MyButton:hover {
 
 i:hover {
     border: 1px solid #fff;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#Home {
+
+}
+
+.active {
+  display: flex;
 }
