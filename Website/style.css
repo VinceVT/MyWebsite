@@ -4,13 +4,8 @@ body, html {
 }
 
 .bg {
-  /* The image used */
   background-image: url("/Images/BeautifulSky.jpg");
-
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,30 +80,14 @@ body, html {
  }
 
  .btns.active {
+      text-align: center;
       background-color: white;
       color: black;
       border: 2px solid #282828;
       display: flex;
  }
 
-b {
-  outline: none;
-  height: 40px;
-  text-align: center;
-  border-radius:5px;
-  background: #fff;
-  border: 2px solid #008CBA;
-  color: #008CBA;
-  letter-spacing:1px;
-  text-shadow:0;
-  width: 100%;
-  font:{
-    size:12px
-    weight:bold
-  };
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
+
 
 .mainContainer {
   width: 60%;
@@ -140,11 +119,6 @@ b {
    background-image: url("/Images/linkin.jpeg");
    border-radius: 85px;
    box-shadow: 1px 1px 6px 3px #888888;
-}
-
-t {
-    font-size: 28px;
-    font-weight: bold;
 }
 
 #pa {
